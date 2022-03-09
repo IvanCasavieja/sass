@@ -1,0 +1,300 @@
+nav {
+  background: #c4c2c2de;
+  height: 61px;
+  width: 100%;
+}
+
+nav .enlace {
+  position: absolute;
+  padding: 10px 50px;
+}
+
+nav .logo {
+  width: 45px;
+  height: 40px;
+  transition: 1s;
+}
+
+nav .logo:hover {
+  transform: rotate(360deg);
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 35px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 20px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+  background: white;
+  border-radius: 3%;
+  padding: 10px 20px;
+}
+
+.formulario {
+  width: 450px;
+  margin: auto;
+  margin-left: 10%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border: 1px wheat solid;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px;
+  margin-top: 100px;
+}
+
+.formulario h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.formulario input {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: white solid 1px;
+  outline: 0px;
+  transition: .5s;
+}
+
+.formulario div {
+  position: relative;
+}
+
+.formulario label {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  pointer-events: none;
+  color: white;
+  transition: .5s;
+}
+
+.formulario input:focus~label {
+  top: -8px;
+  font-size: 15px;
+}
+
+.formulario input:valid~label {
+  top: -8px;
+  font-size: 15px;
+}
+
+.formulario input:focus,
+.formulario input:valid {
+  border-bottom: 1px solid wheat;
+}
+
+.formulario button {
+  overflow: hidden;
+  display: table;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: .3S;
+  color: black;
+  background: #efefefef;
+}
+
+.formulario button:hover {
+  cursor: pointer;
+  background: white;
+  transform: scale(1.05);
+}
+
+.formulario a {
+  display: table;
+  margin: 2px auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+
+.formulario a:hover {
+  color: wheat;
+  background: none;
+}
+
+@media (max-width: 580px) {
+  .formulario .formulario {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formulario .formulario {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+footer {
+  background: #202020;
+  width: 100%;
+  margin-top: 100px;
+  color: #c7c7c7;
+}
+
+footer .contenedor-total {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 20px 20px 0;
+}
+
+footer .contenedor-total .contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contenedor-total .contenedor-footer .lainfo {
+  max-width: 400px;
+}
+
+footer .contenedor-total .contenedor-footer .lainfo h1 {
+  font-size: 22px;
+}
+
+footer .contenedor-total .contenedor-footer .lainfo p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes {
+  max-width: 400px;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes h1 {
+  font-size: 22px;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red {
+  margin-top: 20px;
+  display: flex;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red img {
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red a {
+  margin-top: 11px;
+  margin-left: 10px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  transition: .3s;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red a:hover {
+  color: wheat;
+  background: none;
+}
+
+footer .contenedor-total .contenedor-footer .asociados {
+  max-width: 400px;
+}
+
+footer .contenedor-total .contenedor-footer .asociados .info-asociados {
+  margin-top: 20px;
+  display: flex;
+}
+
+footer .contenedor-total .contenedor-footer .asociados .info-asociados img {
+  width: 36px;
+  height: 36px;
+}
+
+footer .contenedor-total .contenedor-footer .asociados .info-asociados a {
+  margin-left: 20px;
+  margin-top: 11px;
+  max-width: 140px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  transition: .3s;
+}
+
+footer .contenedor-total .contenedor-footer .asociados .info-asociados a:hover {
+  color: wheat;
+  background: none;
+}
+
+footer .contenedor-footercopy {
+  max-width: 100%;
+  background: #101010;
+  padding: 5px;
+}
+
+footer .contenedor-footercopy .footer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer .contenedor-footercopy .footer .copy a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+  margin-left: 15px;
+}
+
+footer .contenedor-footercopy .footer .info a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+  margin-left: 15px;
+}
+
+footer .contenedor-footercopy .footer .info a:hover {
+  color: wheat;
+  background: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background: #b0dfe9;
+  flex-wrap: wrap;
+  background-image: url(/images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

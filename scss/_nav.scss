@@ -1,0 +1,41 @@
+nav{
+    background: #c4c2c2de;
+    height: 61px;
+    width: 100%;
+    .enlace{
+        position: absolute;
+        padding: 10px 50px;
+    }
+    .logo{
+        width: 45px;
+        height: 40px;
+        transition: 1s;
+    }
+    
+    .logo:hover{
+        transform: rotate(360deg);
+    }
+    ul{
+        float: right;
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 60px;
+            margin: 0 35px;
+            a{
+                color: black;
+                font-size: 18px;
+                border-radius: 5px;
+                padding: 20px;
+                transition: .5s;
+                text-decoration: none;
+            }
+            a:hover{
+                color: black;
+                background: white;
+                border-radius: 3%;
+                padding: 10px 20px;
+            }
+        }
+    }
+}

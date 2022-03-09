@@ -1,0 +1,20 @@
+@import "colores.scss";
+@import "nav";
+@import "form.scss";
+@import "footer";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background: rgba(176, 223, 233, 1);
+    flex-wrap: wrap;
+    background-image: url(/images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

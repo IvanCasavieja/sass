@@ -1,0 +1,123 @@
+footer {
+    background: $color_footer;
+    width: 100%;
+    margin-top: 100px;
+    color: $colore_footer_letra;
+
+    .contenedor-total {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 20px 20px 0;
+
+        .contenedor-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .lainfo {
+                max-width: 400px;
+
+                h1 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+            }
+
+            .lasredes {
+                max-width: 400px;
+
+                h1 {
+                    font-size: 22px;
+                }
+
+                .red {
+                    margin-top: 20px;
+                    display: flex;
+                        img {
+                        object-fit: cover;
+                        width: 36px;
+                        height: 36px;
+                        background-color: white;
+                    }
+                    a {
+                        margin-top: 11px;
+                        margin-left: 10px;
+                        text-decoration: none;
+                        background: none;
+                        color: white;
+                        transition: .3s;
+                    }
+    
+                    a:hover {
+                        color: wheat;
+                        background: none;
+                    }
+                }
+            }
+
+            .asociados {
+                max-width: 400px;
+
+                .info-asociados {
+                    margin-top: 20px;
+                    display: flex;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+    
+                    a {
+                        margin-left: 20px;
+                        margin-top: 11px;
+                        max-width: 140px;
+                        text-decoration: none;
+                        background: none;
+                        color: white;
+                        transition: .3s;
+                    }
+    
+                    a:hover {
+                        color: wheat;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+    .contenedor-footercopy {
+        max-width: 100%;
+        background: #101010;
+        padding: 5px;
+
+        .footer {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+            .copy a {
+                text-decoration: none;
+                color: white;
+                transition: .3s;
+                margin-left: 15px;
+            }
+            .info a {
+                text-decoration: none;
+                color: white;
+                transition: .3s;
+                margin-left: 15px;
+            }
+            
+            .info a:hover {
+                color: wheat;
+                background: none;
+            }
+        }        
+    }
+}
