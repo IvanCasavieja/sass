@@ -37,21 +37,28 @@ footer {
                 .red {
                     margin-top: 20px;
                     display: flex;
-                        img {
-                        object-fit: cover;
-                        width: 36px;
-                        height: 36px;
-                        background-color: white;
+
+                    @each $red in facebook,
+                    instagram,
+                    whatsapp {
+                        img.#{$red} {
+                            object-fit: cover;
+                            width: 36px;
+                            height: 36px;
+                            background-color: white;
+                        }
                     }
+
+                    $estilolinks:(margen: 11px 0px 0px 10px);
+
                     a {
-                        margin-top: 11px;
-                        margin-left: 10px;
+                        margin: map-get($estilolinks, margen);
                         text-decoration: none;
                         background: none;
                         color: white;
                         transition: .3s;
                     }
-    
+
                     a:hover {
                         color: wheat;
                         background: none;
@@ -66,12 +73,16 @@ footer {
                     margin-top: 20px;
                     display: flex;
 
-                    img {
-                        width: 36px;
-                        height: 36px;
+                    @mixin sizes($width, $height){
+                        height: $height;
+                        width: $width;
                     }
-    
-                    a {
+                    
+                    img {
+                        @include sizes(36px,36px )
+                    }
+
+                    .vet1 {
                         margin-left: 20px;
                         margin-top: 11px;
                         max-width: 140px;
@@ -80,7 +91,12 @@ footer {
                         color: white;
                         transition: .3s;
                     }
-    
+
+                    .vet1--vet2{
+                        @extend.vet1;
+                        color: green;
+                    }
+
                     a:hover {
                         color: wheat;
                         background: none;
@@ -89,6 +105,7 @@ footer {
             }
         }
     }
+
     .contenedor-footercopy {
         max-width: 100%;
         background: #101010;
@@ -101,23 +118,17 @@ footer {
             justify-content: space-between;
             padding: 20px;
 
-            .copy a {
+            a {
                 text-decoration: none;
                 color: white;
                 transition: .3s;
                 margin-left: 15px;
             }
-            .info a {
-                text-decoration: none;
-                color: white;
-                transition: .3s;
-                margin-left: 15px;
-            }
-            
-            .info a:hover {
+
+            a:hover {
                 color: wheat;
                 background: none;
             }
-        }        
+        }
     }
 }

@@ -200,7 +200,21 @@ footer .contenedor-total .contenedor-footer .lasredes .red {
   display: flex;
 }
 
-footer .contenedor-total .contenedor-footer .lasredes .red img {
+footer .contenedor-total .contenedor-footer .lasredes .red img.facebook {
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red img.instagram {
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+footer .contenedor-total .contenedor-footer .lasredes .red img.whatsapp {
   object-fit: cover;
   width: 36px;
   height: 36px;
@@ -208,8 +222,7 @@ footer .contenedor-total .contenedor-footer .lasredes .red img {
 }
 
 footer .contenedor-total .contenedor-footer .lasredes .red a {
-  margin-top: 11px;
-  margin-left: 10px;
+  margin: 11px 0px 0px 10px;
   text-decoration: none;
   background: none;
   color: white;
@@ -231,11 +244,12 @@ footer .contenedor-total .contenedor-footer .asociados .info-asociados {
 }
 
 footer .contenedor-total .contenedor-footer .asociados .info-asociados img {
-  width: 36px;
   height: 36px;
+  width: 36px;
 }
 
-footer .contenedor-total .contenedor-footer .asociados .info-asociados a {
+footer .contenedor-total .contenedor-footer .asociados .info-asociados .vet1,
+footer .contenedor-total .contenedor-footer .asociados .info-asociados .vet1--vet2 {
   margin-left: 20px;
   margin-top: 11px;
   max-width: 140px;
@@ -243,6 +257,10 @@ footer .contenedor-total .contenedor-footer .asociados .info-asociados a {
   background: none;
   color: white;
   transition: .3s;
+}
+
+footer .contenedor-total .contenedor-footer .asociados .info-asociados .vet1--vet2 {
+  color: green;
 }
 
 footer .contenedor-total .contenedor-footer .asociados .info-asociados a:hover {
@@ -264,21 +282,14 @@ footer .contenedor-footercopy .footer {
   padding: 20px;
 }
 
-footer .contenedor-footercopy .footer .copy a {
+footer .contenedor-footercopy .footer a {
   text-decoration: none;
   color: white;
   transition: .3s;
   margin-left: 15px;
 }
 
-footer .contenedor-footercopy .footer .info a {
-  text-decoration: none;
-  color: white;
-  transition: .3s;
-  margin-left: 15px;
-}
-
-footer .contenedor-footercopy .footer .info a:hover {
+footer .contenedor-footercopy .footer a:hover {
   color: wheat;
   background: none;
 }
